@@ -1,0 +1,194 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>About Us</h1>
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li class="active">About Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Sub Banner end -->
+
+<!-- Service center strat -->
+<div class="about-car content-area-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6">
+                <div class="about-car-photo">
+                    <div id="carDetailsSlider" class="carousel car-details-sliders slide">
+                        <!-- main slider carousel items -->
+                        <div class="carousel-inner">
+                            <div class="active item carousel-item" data-slide-number="0">
+                                <img src="{% static 'img/car/car-1.jpg' %}" class="img-fluid" alt="slider-car">
+                            </div>
+                            <div class="item carousel-item" data-slide-number="1">
+                                <img src="{% static 'img/car/car-2.jpg' %}" class="img-fluid" alt="slider-car">
+                            </div>
+                            <div class="item carousel-item" data-slide-number="2">
+                                <img src="{% static 'img/car/car-3.jpg' %}" class="img-fluid" alt="slider-car">
+                            </div>
+                        </div>
+                        <!-- main slider carousel nav controls -->
+                        <ul class="carousel-indicators car-properties list-inline nav nav-justified">
+                            <li class="list-inline-item active">
+                                <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#carDetailsSlider">
+                                    <img src="{% static 'img/car/car-1.jpg' %}" class="img-fluid" alt="small-car">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-1" data-slide-to="1" data-target="#carDetailsSlider">
+                                    <img src="{% static 'img/car/car-2.jpg' %}" class="img-fluid" alt="small-car">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-2" data-slide-to="2" data-target="#carDetailsSlider">
+                                    <img src="{% static 'img/car/car-3.jpg' %}" class="img-fluid" alt="small-car">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-6 align-self-center">
+                <div class="best-used-car">
+                    <h3>Welcome to <span>Cars Hut</span></h3>
+                    <p>CarsHut is India's leading car search venture that helps users buy cars that are right for them. Its website and app carry rich automotive content such as expert reviews, detailed specs and prices, comparisons as well as videos and pictures of all car brands and models available in India. The company has tie-ups with many auto manufacturers, more than 4000 car dealers and numerous financial institutions to facilitate the purchase of vehicles.
+
+                        CarsHut has launched many innovative features to ensure that users get an immersive experience of the car model before visiting a dealer showroom. These include a Feel The Car tool that gives 360-degree interior/exterior views with sounds of the car and explanations of features with videos; search and comparison by make, model, price, features; and live offers and promotions in all cities. The platform also has used car classifieds wherein users can upload their cars for sale, and find used cars for buying from individuals and used car dealers.</p>
+                    <p class="mb-0">The company has expanded to Southeast Asia with the launch of Zigwheels.ph, Zigwheels.my and Oto.com. It also has a presence in the UAE with Zigwheels.ae</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service center end -->
+
+
+
+<!-- Our team start -->
+<div class="our-team content-area">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title">
+            <h1>Executive <span>Team</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        </div>
+        <!-- Slick slider area start -->
+        <div class="slick-slider-area clearfix">
+            <div class="row slick-carousel" data-slick='{"slidesToShow": 4, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+                <div class="slick-slide-item">
+                    <div class="team-1">
+                        <div class="photo">
+                            <a href="#">
+                                <img src="img/avatar/avatar-12.jpg" alt="team-1" class="img-fluid">
+                            </a>
+                            <div class="social-list clearfix">
+                                <a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="google-bg"><i class="fa fa-google"></i></a>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h4><a href="team-detail.html">Brandon Miller</a></h4>
+                            <h5>Manager</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="team-1">
+                        <div class="photo">
+                            <a href="#">
+                                <img src="img/avatar/avatar-9.jpg" alt="team-1" class="img-fluid">
+                            </a>
+                            <div class="social-list clearfix">
+                                <a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="google-bg"><i class="fa fa-google"></i></a>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h4><a href="team-detail.html">Michelle Nelson</a></h4>
+                            <h5>Support Manager</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="team-1">
+                        <div class="photo">
+                            <a href="#">
+                                <img src="img/avatar/avatar-11.jpg" alt="team-1" class="img-fluid">
+                            </a>
+                            <div class="social-list clearfix">
+                                <a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="google-bg"><i class="fa fa-google"></i></a>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h4><a href="team-detail.html">Stone Carolyn</a></h4>
+                            <h5>Creative Director</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="team-1">
+                        <div class="photo">
+                            <a href="#">
+                                <img src="img/avatar/avatar-10.jpg" alt="team-1" class="img-fluid">
+                            </a>
+                            <div class="social-list clearfix">
+                                <a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="google-bg"><i class="fa fa-google"></i></a>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h4><a href="team-detail.html">Martin Smith</a></h4>
+                            <h5>Web Developer</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="team-1">
+                        <div class="photo">
+                            <a href="#">
+                                <img src="img/avatar/avatar-11.jpg" alt="team-1" class="img-fluid">
+                            </a>
+                            <div class="social-list clearfix">
+                                <a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="google-bg"><i class="fa fa-google"></i></a>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h4><a href="team-detail.html">Stone Carolyn</a></h4>
+                            <h5>Creative Director</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Our team end -->
+
+<!-- Full Page Search -->
+<!-- <div id="full-page-search">
+    <button type="button" class="close">×</button>
+    <form action="https://storage.googleapis.com/theme-vessel/carhouse/index.html#" class="search-header">
+        <input type="search" value="" placeholder="type keyword(s) here. Eg: audi, benz etc" />
+        <button type="submit" class="btn btn-sm button-theme">Search</button>
+    </form>
+</div> -->
+
+
+{% endblock %}
