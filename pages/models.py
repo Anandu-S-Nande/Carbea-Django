@@ -1,6 +1,3 @@
-from distutils.command.upload import upload
-from pickle import TRUE
-from tabnanny import verbose
 from django.db import models
 
 # Create your models here.
@@ -14,7 +11,7 @@ class Team(models.Model):
     facebook_link = models.URLField(max_length=100)
     twitter_link = models.URLField(max_length=100)
     google_plus_link = models.URLField(max_length=100)
-    created_data = models.DateTimeField(auto_now_add=TRUE)
+    created_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.first_name  #THIS IS FOR ADMIN PANNEL'S TEAMS SHOWN BASED ON FIRST_NAME
