@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages.apps.PagesConfig',
+    'cars.apps.CarsConfig',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +71,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'carsbea.wsgi.application'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 
 # Database
