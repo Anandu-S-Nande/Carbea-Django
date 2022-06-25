@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'contacts.apps.ContactsConfig',
 
     #providers
     'allauth.socialaccount.providers.facebook',
@@ -157,3 +158,11 @@ MESSAGE_TAGS = {
 }
 
 SITE_ID = 1
+
+#Email sending
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT =  587
+EMAIL_HOST_USER = 'anandusnande@gamail.com'
+EMAIL_HOST_PASSWORD = '7012656013'
+EMAIL_USE_TLS = True
